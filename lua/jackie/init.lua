@@ -1,7 +1,11 @@
 require("jackie.remap")
 require("jackie.set")
 require("jackie.lazy")
-require('overseer').setup()
+require('overseer').setup(
+    {templates = {"builtin","user.cpp_build"},
+
+    }
+)
 
 local augroup = vim.api.nvim_create_augroup
 local jackie_group = augroup('jackie', {})
