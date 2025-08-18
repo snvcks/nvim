@@ -1,6 +1,7 @@
 require("jackie.remap")
 require("jackie.set")
 require("jackie.lazy")
+require('overseer').setup()
 
 local augroup = vim.api.nvim_create_augroup
 local jackie_group = augroup('jackie', {})
