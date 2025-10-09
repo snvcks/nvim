@@ -30,7 +30,6 @@ return {
                 "rust_analyzer",
                 "gopls",
                 "clangd",
-                "python-lsp-server"
             },
             handlers = {
                 function(server_name) -- default handler (optional)

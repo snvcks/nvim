@@ -8,6 +8,7 @@ return {
   opts = {
     -- your configuration comes here
     -- or leave it empty to use the default settings
+    preset = "helix"
   },
     keys = {
     {
@@ -18,4 +19,9 @@ return {
       desc = "Buffer Local Keymaps (which-key)",
     },
   },
+    triggers = {
+   { "<auto>", mode = "nixsotc" },
+   { "<C>", mode = { "n", "v" } },
+   { "<S>", mode = { "n", "v" } },
+ }
 }
