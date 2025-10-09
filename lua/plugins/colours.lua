@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "rose-pine-moon"
+	color = color or "sonokai"
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -8,20 +8,17 @@ end
 
 return {
     {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        config = function()
-            require('rose-pine').setup({
-                disable_background = true,
-                dim_inactive_window = false,
-                styles = {
-                    transparent = false,
-                    italic = false,
-                },
-            })
-
+        'sainnhe/sonokai',
+          lazy = false,
+          priority = 1000,
+          config = function()
+            -- Optionally configure and load the colorscheme
+            -- directly inside the plugin declaration.
+            vim.g.sonokai_enable_italic = true
+            vim.g.sonokai_style = 'atlantis'
+            vim.cmd.colorscheme('sonokai')
             ColorMyPencils();
-        end
+            end
     },
 
 
