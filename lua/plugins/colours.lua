@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "sonokai"
+	color = color or 'nordic'
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -8,15 +8,11 @@ end
 
 return {
     {
-        'sainnhe/sonokai',
-          lazy = false,
-          priority = 1000,
-          config = function()
-            -- Optionally configure and load the colorscheme
-            -- directly inside the plugin declaration.
-            vim.g.sonokai_enable_italic = true
-            vim.g.sonokai_style = 'atlantis'
-            vim.cmd.colorscheme('sonokai')
+        'AlexvZyl/nordic.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+        require('nordic').load()
             ColorMyPencils();
             end
     },
