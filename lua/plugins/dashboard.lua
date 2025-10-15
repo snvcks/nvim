@@ -27,7 +27,7 @@ return {
                           printf("%d ", (v ? v : 0))
                         }
                         print ""
-                      }' | sparkly
+                      }' | sparkly ; sleep 0.1
                     ]],
                     height = 1,
                     padding = 2,

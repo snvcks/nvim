@@ -11,6 +11,11 @@ return {
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
+        {
+            "folke/lazydev.nvim",
+            ft = "lua",
+            opts = { library = { path = "${3rd}/luv/library", words = {"vim%.uv"}}}
+        }
     },
 
     config = function()
@@ -69,7 +74,7 @@ return {
                     }
                 end,
             }
-        })
+        }) 
 
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
@@ -94,6 +99,12 @@ return {
         })
 
         vim.diagnostic.config({
+            virtual_text = {
+                current_line = true,
+                prefix = "",
+                spacing = 2,
+                severity = {min =vim.diagnostic.severity.WARN}
+            },
             -- update_in_insert = true,
             float = {
                 focusable = false,
