@@ -100,7 +100,7 @@ return {
 
         vim.diagnostic.config({
             virtual_text = {
-                current_line = true,
+                current_line = false,
                 prefix = "",
                 spacing = 2,
                 severity = {min =vim.diagnostic.severity.WARN}
