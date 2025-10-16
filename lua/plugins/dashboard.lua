@@ -71,6 +71,10 @@ return {
                     padding = 2,
                     gap = 0
                 },
+                {
+                    pane = 1,
+                    section = "startup"
+                }
             },
         }
     }
