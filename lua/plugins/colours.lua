@@ -11,8 +11,16 @@ return {
         'AlexvZyl/nordic.nvim',
         lazy = false,
         priority = 1000,
+        opts ={
+            transparency ={
+                bg = true
+            },
+            noice = {
+                style = 'flat'
+            }
+        },
         config = function()
-        require('nordic').load()
+        require('nordic').load({})
             ColorMyPencils();
             end
     },
