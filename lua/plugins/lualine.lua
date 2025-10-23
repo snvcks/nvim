@@ -12,8 +12,7 @@ return {
 		auto_theme.normal.a.bg   =  palette.cyan.base
 		auto_theme.normal.b.bg = palette.black0
 		auto_theme.normal.c.bg = palette.grey1
-
-
+        
 		auto_theme.inactive.b.bg = palette.black0
 		auto_theme.inactive.c.bg = palette.grey1
 		auto_theme.insert.b.bg = palette.black0
@@ -62,7 +61,7 @@ return {
 			tabline = {
 				lualine_a = {
 					{
-						function() return [[( • ) ( • )]] end,
+						function() return [[=^..^=]] end,
 						separator = { left = "", right = "" },
 					},
 				},
