@@ -12,6 +12,7 @@ return {
 		auto_theme.normal.a.bg   =  palette.cyan.base
 		auto_theme.normal.b.bg = palette.black0
 		auto_theme.normal.c.bg = palette.grey1
+
         
 		auto_theme.inactive.b.bg = palette.black0
 		auto_theme.inactive.c.bg = palette.grey1

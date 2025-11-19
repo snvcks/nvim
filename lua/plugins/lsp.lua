@@ -104,7 +104,7 @@ return {
                 current_line = false,
                 prefix = "",
                 spacing = 2,
-                severity = {min =vim.diagnostic.severity.WARN}
+                severity = {min =vim.diagnostic.severity.ERROR}
             },
             -- update_in_insert = true,
             float = {
